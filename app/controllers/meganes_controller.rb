@@ -23,6 +23,13 @@ class MeganesController < ApplicationController
     @megane = Megane.find(params[:id]);
   end
 
+  def destroy
+    @megane = Megane.find(params[:id]);
+    if @megane.destroy
+      redirect_to meganes_path, notice: 'メガネが削除されました。'
+    end
+  end
+
   private
   def megane_params
     params.require(:megane).permit(:title ,:name ,:content)
