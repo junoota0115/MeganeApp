@@ -6,12 +6,14 @@
     <th>name</th>
     <th>content</th>
 </tr>
-<% @meganes.each do |t|%>
+<% @meganes.each do |megane|%>
 <tr>
-    <td><%= t.id %></td>
-    <td><%= t.title %></td>
-    <td><%= t.name %></td>
-    <td><%= t.content %></td>
+    <td><%= megane.id %></td>
+    <td><%= megane.title %></td>
+    <td><%= megane.name %></td>
+    <td><%= megane.content %></td>
+    <td><%=link_to '詳細',megane_path(megane) %></td>
+    
 </tr>
 <%end%>
 
