@@ -4,6 +4,7 @@ class CreateMeganes < ActiveRecord::Migration[7.0]
       t.string :title, null: false
       t.string :name, null: false
       t.text :content
+      
       t.timestamps
     end
   end

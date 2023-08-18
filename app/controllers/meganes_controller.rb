@@ -10,8 +10,13 @@ class MeganesController < ApplicationController
 
   def create
     @megane = Megane.new(megane_params)
-    @megane.save
-    redirect_to @meganes
+
+    if @megane.save
+       redirect_to meganes_path
+    else 
+       render 'new',status: :unprocessable_entity
+    end
+  
   end
   
   def show
