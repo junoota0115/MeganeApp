@@ -1,0 +1,18 @@
+ja:
+  activerecord:
+    attributes:
+      megane:
+        title: "タイトル"
+        name: "名前"
+        content: "コンテンツ"
+    errors:
+      models:
+        megane:
+          attributes:
+            title:
+              blank: "が入力されていません"
+            name:
+              blank: "が入力されていません"
+            content:
+              too_short: "短すぎます（最小%{count}文字）"
+              too_long: "長すぎます（最大%{count}文字）"

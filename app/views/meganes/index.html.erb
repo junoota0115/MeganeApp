@@ -1,1 +1,19 @@
-<h1>Meganes#index</h1>
+<h1>Meganes</h1>
+<table border=1>
+<tr>
+    <th>id</th>
+    <th>title</th>
+    <th>name</th>
+    <th>content</th>
+</tr>
+<% @meganes.each do |t|%>
+<tr>
+    <td><%= t.id %></td>
+    <td><%= t.title %></td>
+    <td><%= t.name %></td>
+    <td><%= t.content %></td>
+</tr>
+<%end%>
+
+<%=link_to 'create',new_megane_path %>
+</table>

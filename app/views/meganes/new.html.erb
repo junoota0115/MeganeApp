@@ -1,1 +1,26 @@
-pe-ji 
+<h1>登録ページ</h1>
+<%= form_with model:@megane do |form| %>
+    <% if @megane.errors.any?%>
+    <div style="color: red;">
+        <ul>
+        <% @megane.errors.full_messages.each do |message|%>
+        <li><%= message %></li>
+        <%end%>
+        </ul>
+    </div>
+    <%end%>
+
+    <div>
+    <%= form.label :title%>
+    <%= form.text_field :title%>
+    </div>
+    <div>
+    <%= form.label :name%>
+    <%= form.text_field :name%>
+    </div>
+    <div>
+    <%= form.label :content%>
+    <%= form.text_area :content%>
+    </div>
+    <%=form.submit %>
+<%end%>
