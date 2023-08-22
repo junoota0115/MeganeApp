@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   get 'meganes/index'
   resources :meganes
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :csv_exports, only: [] do
+    collection do
+      get 'export'
+    end
+    end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
