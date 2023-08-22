@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .top-page-header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+.nav{
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color:lightsteelblue;
+}
+
