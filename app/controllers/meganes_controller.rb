@@ -26,7 +26,8 @@ class MeganesController < ApplicationController
   def destroy
     @megane = Megane.find(params[:id]);
     if @megane.destroy
-      redirect_to meganes_path, notice: 'メガネが削除されました。'
+      flash[:notice] = '記録が削除されました。'
+      redirect_to meganes_path
     end
   end
 

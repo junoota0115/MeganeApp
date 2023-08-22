@@ -2,12 +2,12 @@
 <header class='top-page-header'>
 <div class='nav'>
     <ul class='logo-left'>
-      <li><%= link_to 'LOGO', "#", class: "logo" %></li>
+      <li><%= link_to 'LOGO', "/meganes", class: "logo" %></li>
     </ul>
 
     <ul class='lists-right'>
     <% if user_signed_in? %> <!-- ユーザーがログインしていた時の処理 -->
-       <%# <h4> メールアドレス： <%= current_user.email ,class: "user-nickname"%> </h4> 
+       <%# <h4> メールアドレス： <%= current_user.email ,class: "user-nickname" </h4>  %>
       <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete ,class: "logout"%> </li><!-- ログアウトをする -->
     <% else %> <!-- ユーザーがログインしていなかった時の処理 -->
       <li><%= link_to "ログイン", new_user_session_path, class: 'post',class: "login" %></li> <!-- ログイン画面に移行する -->
