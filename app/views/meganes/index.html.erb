@@ -1,6 +1,7 @@
 
 <%= render 'meganes/shared/header' %>
 
+
 <% flash.each do |key, value| %>
   <div class="flash <%= key %>">
     <%= value %>
@@ -9,16 +10,17 @@
 
 <div class='main'>
 <h1>Meganes</h1>
+<div>
+<%= link_to 'create', new_megane_path %>
+</div>
 <table border="1">
   <tr>
-    <th>id</th>
     <th>title</th>
     <th>name</th>
     <th>content</th>
   </tr>
   <% @meganes.each do |megane| %>
     <tr>
-      <td><%= megane.id %></td>
       <td><%= megane.title %></td>
       <td><%= megane.name %></td>
       <td><%= megane.content %></td>
@@ -29,6 +31,6 @@
 </table>
 </div>
 
-<%= link_to 'create', new_megane_path %>
-
+<div>
 <%= link_to 'CSVエクスポート', export_csv_exports_path(format: :csv), class: 'btn btn-primary' %>
+</div>

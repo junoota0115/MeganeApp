@@ -11,6 +11,13 @@
     padding-right: 20px;
     display: flex;
     justify-content: space-between;
-    background-color:lightsteelblue;
+    align-items: center;
+    background-color:#000000;
+}
+.logout{
+    color: rgb(219, 162, 6);
 }
 
+.logo{
+    width: 50px;
+}
