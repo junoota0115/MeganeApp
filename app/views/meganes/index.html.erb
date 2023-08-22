@@ -1,21 +1,25 @@
+<%= render 'meganes/templatefile/header' %>
+
 <h1>Meganes</h1>
-<table border=1>
-<tr>
+<table border="1">
+  <tr>
     <th>id</th>
     <th>title</th>
     <th>name</th>
     <th>content</th>
-</tr>
-<% @meganes.each do |megane|%>
-<tr>
-    <td><%= megane.id %></td>
-    <td><%= megane.title %></td>
-    <td><%= megane.name %></td>
-    <td><%= megane.content %></td>
-    <td><%=link_to '詳細',megane_path(megane) %></td>
-    <td><%=link_to '削除',megane_path(megane), data:{turbo_method:'delete',turbo_confirm: '本当に削除しますか？'} %></td>
-</tr>
-<%end%>
-
-<%=link_to 'create',new_megane_path %>
+  </tr>
+  <% @meganes.each do |megane| %>
+    <tr>
+      <td><%= megane.id %></td>
+      <td><%= megane.title %></td>
+      <td><%= megane.name %></td>
+      <td><%= megane.content %></td>
+      <td><%= link_to '詳細', megane_path(megane) %></td>
+      <td><%= link_to '削除', megane_path(megane), data: { turbo_method: 'delete', turbo_confirm: '本当に削除しますか？' } %></td>
+    </tr>
+  <% end %>
 </table>
+
+<%= link_to 'create', new_megane_path %>
+
+<%= link_to 'CSVエクスポート', export_csv_exports_path(format: :csv), class: 'btn btn-primary' %>
