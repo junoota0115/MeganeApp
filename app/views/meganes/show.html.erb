@@ -1,10 +1,16 @@
+<%= render 'meganes/shared/header' %>
+
 <h1> Show </h1>
-<div>
-<%= @megane.title %>
-</div>
-<div>
-<%= @megane.name %>
-</div>
-<div>
-<%= @megane.content %>
-</div>
+<table border="1">
+  <tr>
+    <th>title</th>
+    <th>name</th>
+    <th>content</th>
+  </tr>
+  <tr>
+    <td><%= @megane.title %></td>
+    <td><%= @megane.name %></td>
+    <td><%= @megane.content %></td>
+ </tr>
+
+ </table>

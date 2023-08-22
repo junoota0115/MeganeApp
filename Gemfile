@@ -73,3 +73,4 @@ end
 
 gem 'rails-i18n'
 gem 'csv'
+gem 'devise'

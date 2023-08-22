@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  
   get 'meganes/index'
   resources :meganes
   resources :csv_exports, only: [] do

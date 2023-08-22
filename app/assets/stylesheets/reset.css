@@ -1,0 +1,40 @@
+/* Reset CSS */
+
+/* Remove default margin */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+  
+  /* Remove default padding */
+  body, button, input, select, textarea {
+    padding: 0;
+  }
+  
+  /* Set box sizing to border-box for all elements */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Set default font size and line height */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Remove list styles (bullets/numbers) */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove anchor underline and color */
+  a {
+    text-decoration: none;
+    /* color: inherit; */
+  }
+  
+  /* Remove focus outline */
+  a:focus, button:focus {
+    outline: none;
+  }
+  
+  /* Add more reset styles as needed */
