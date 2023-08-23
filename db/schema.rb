@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_22_065850) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_23_073834) do
+  create_table "connects", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "name_kana", null: false
+    t.string "email", null: false
+    t.string "tel_number", null: false
+    t.integer "inquiry", null: false
+    t.text "content", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "csv_exports", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

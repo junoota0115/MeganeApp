@@ -1,0 +1,40 @@
+<%= render 'shared/header' %>
+<h1>登録ページ</h1>
+
+<%= form_with model:@connect do |form| %>
+    <% if @connect.errors.any?%>
+    <div style="color: red;">
+        <ul>
+        <% @connect.errors.full_messages.each do |message|%>
+        <li><%= message %></li>
+        <%end%>
+        </ul>
+    </div>
+    <%end%>
+<div class="form_top">
+    
+    <%= form.label :name%>
+    <%= form.text_field :name%>
+    
+    
+    <%= form.label :name_kana%>
+    <%= form.text_field :name_kana%>
+
+    <%= form.label :email%>
+    <%= form.text_field :email%>
+
+    <%= form.label :tel_number%>
+    <%= form.text_field :tel_number%>
+
+    <%= form.label :inquiry%>
+    <div class="radio-buttons">
+    <%= form.radio_button :inquiry,"1"%>メガネ
+    <%= form.radio_button :inquiry,"2"%>コンタクト
+    <%= form.radio_button :inquiry,"3"%>その他
+    </div>
+    <%= form.label :content%>
+    <%= form.text_area :content%>
+
+    <%=form.submit %>
+    </div>
+<%end%>

@@ -1,0 +1,12 @@
+.form_top{
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* 縦方向に配置 */
+    align-items: center; /* 横方向にセンター配置 */
+    margin-bottom: 1em; /* 要素間の余白 */
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 10px; /* ボタン間の間隔を調整 */
+  }
