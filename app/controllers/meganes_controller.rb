@@ -5,7 +5,6 @@ class MeganesController < ApplicationController
 
   def new
     @megane = Megane.new
-
   end
 
   def create
