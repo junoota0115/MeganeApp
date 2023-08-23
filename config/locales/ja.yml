@@ -16,3 +16,13 @@ ja:
             content:
               too_short: "短すぎます（最小%{count}文字）"
               too_long: "長すぎます（最大%{count}文字）"
+              activerecord:
+
+    attributes:
+      connect:
+        name: "名前"
+        name_kana: "名前(かな)"
+        email: "アドレス"
+        tel_number: "電話番号"
+        inquiry: "問い合わせ項目"
+        content: "問い合わせ内容"
