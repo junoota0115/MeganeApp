@@ -1,13 +1,13 @@
 
 <%= render 'meganes/shared/header' %>
 
-
+<!--
 <% flash.each do |key, value| %>
   <div class="flash <%= key %>">
     <%= value %>
   </div>
 <% end %>
-
+-->
 <div class='main'>
 <h1>Meganes</h1>
 <div>
@@ -34,3 +34,4 @@
 <div>
 <%= link_to 'CSVエクスポート', export_csv_exports_path(format: :csv), class: 'btn btn-primary' %>
 </div>
+<%= link_to 'お問い合わせ' %>

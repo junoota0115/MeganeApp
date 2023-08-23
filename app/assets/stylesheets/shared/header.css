@@ -14,6 +14,18 @@
     align-items: center;
     background-color:#000000;
 }
+
+.lists-right{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(219, 162, 6);
+}
+
+.login{
+  padding-right: 10px;
+}
+
 .logout{
     color: rgb(219, 162, 6);
 }
