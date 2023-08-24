@@ -74,3 +74,6 @@ end
 gem 'rails-i18n'
 gem 'csv'
 gem 'devise'
+
+gem 'bootstrap', '~> 5.0.2'
+gem 'jquery-rails'

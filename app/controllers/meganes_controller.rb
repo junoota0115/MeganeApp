@@ -1,4 +1,6 @@
 class MeganesController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
     @meganes = Megane.all
   end

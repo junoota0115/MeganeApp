@@ -1,0 +1,23 @@
+<h1>問い合わせ内容</h1>
+<table border="1">
+  <tr>
+    <th>お名前</th>
+    <th>ふりがな</th>
+    <th>アドレス</th>
+    <th>電話番号</th>
+    <th>種類</th>
+    <th>問い合わせ内容</th>
+    <th>日時</th>
+    
+  </tr>
+<% @connects.each do |connect|%>
+<tr>
+    <td><%=connect.name%></td>
+    <td><%=connect.name_kana%></td>
+    <td><%=connect.email%></td>
+    <td><%=connect.tel_number%></td>
+    <td><%=connect.inquiry%></td>
+    <td><%=connect.content%></td>
+    <td><%=connect.created_at.strftime('%Y-%m-%d %H:%M:%S')%></td>
+</tr>
+<%end%>

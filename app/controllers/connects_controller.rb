@@ -1,5 +1,6 @@
 class ConnectsController < ApplicationController
     def index
+        @connects = Connect.all
     end
 
     def new
