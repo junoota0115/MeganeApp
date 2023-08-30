@@ -1,0 +1,27 @@
+.top-mainpage{
+    width: 100%;
+}
+
+.top-link{
+display: flex;
+justify-content:space-around;
+align-items: center;
+
+}
+
+.link-btn {
+    display: inline-block;
+    padding: 15px 10px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #92c4f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .link-btn:hover {
+    background-color: #2980b9;
+  }
